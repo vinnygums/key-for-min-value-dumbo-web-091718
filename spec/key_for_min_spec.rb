@@ -1,4 +1,5 @@
 describe "smallest hash value" do
+require 'pry'
 
   it "does not call the `#keys` method" do
     hash = {:blake => 500, :ashley => 2, :adam => 1}
