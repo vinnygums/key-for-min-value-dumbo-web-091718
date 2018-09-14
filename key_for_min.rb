@@ -7,8 +7,10 @@ def key_for_min_value(name_hash)
   name_hash.sort_by do |name, value|
     array << value
   end
+  while i < array.size
    if array[i] < array[i+1]
     array[i], array[i+1] = array[i+1], array[i]
     i = i + 1 
    end
+ end
 end
